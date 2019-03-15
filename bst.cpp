@@ -40,19 +40,19 @@ void insert(node*curr,int value){
 	if(curr->left==NULL)
 	curr->left=new node(value);
 	//if its not null,move left and call insert
-	else insert(curr->left=value)
+	else insert(curr->left,value)
 }
 	
 	
 	else{
 		if(curr->right==NULL) curr->right=new node(value)
-		else insert(curr->right=value);
+		else insert(curr->right,value);
 	}
 	
 }
 
 void displayhelper(){
-	displat(root);
+	display(root);
 }
 
 
